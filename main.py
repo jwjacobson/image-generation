@@ -15,7 +15,7 @@ def generate_image(prompt):
         "inputs": prompt,
         "parameters": {
             "guidance_scale": 7.5,
-            "num_inference_steps": 50
+            "num_inference_steps": 10
         }
     }
     
@@ -33,3 +33,4 @@ image = generate_image(prompt)
 
 if image:
     image.save("generated_image.png")
+    print("Image saved.")
