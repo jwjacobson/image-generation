@@ -26,7 +26,7 @@ In the `.env` file, paste your API token after `API_TOKEN=`
 > Your API key is sensitive data and should not be put in version control. `.env` is already listed in `.gitignore`, but you should be mindful and not expose it.
 
 ## Running the script
-Type,
+Type
 ```bash
 uv run main.py
 ```
@@ -35,11 +35,11 @@ then type your image prompt! The image will be saved as `generated_image.png`
 ## Adjusting parameters
 This script includes two adjustable parameters that affect how the model interprets your prompt: `guidance_scale` and `num_inference_steps`.
 
-*guidance_scale* controls how literally the model interprets your prompt: a lower number is more creative, while a higher one is more literal. 7.5–15 are recommended values.
+**guidance_scale** controls how literally the model interprets your prompt: a lower number is more creative, while a higher one is more literal. 7.5–15 are recommended values.
 
-*num_inference_steps* controls how many times the model refines its output: lower runs quickly but is rougher in quality, while higher is the opposite. 20–30 are good values if you're just playing around. If you know what you want and are willing to wait, try going up to 100!
+**num_inference_steps** controls how many times the model refines its output: lower runs quickly but is rougher in quality, while higher is the opposite. 20–30 are good values if you're just playing around. If you know what you want and are willing to wait, try going up to 100!
 
-For simplicity, these values are **hard-coded** into the script, i.e. explicitly declared as part of the code. Simply edit the values in lines 17–18 to experiment.
+For simplicity, these values are *hard-coded* into the script, i.e. explicitly declared as part of the code. Simply edit the values in lines 17–18 to experiment.
 
 ### License
-This script is [free software](https://www.fsf.org/about/what-is-free-software), released under version 3.0 of the GPL. Everyone has the right to use, modify, and distribute gfetch subject to the [stipulations](https://github.com/jwjacobson/image-generation/blob/main/LICENSE) of that license.
+This script is [free software](https://www.fsf.org/about/what-is-free-software), released under version 3.0 of the GPL. Everyone has the right to use, modify, and distribute it subject to the [stipulations](https://github.com/jwjacobson/image-generation/blob/main/LICENSE) of that license.
