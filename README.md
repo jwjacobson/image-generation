@@ -5,7 +5,7 @@ This script lets you generate images using Hugging Face's Inference API via the 
 ## Prerequisites
 1. [git](https://git-scm.com/downloads) (to clone the repo)
 2. [uv](https://docs.astral.sh/uv/getting-started/installation/) (to manage dependencies and Python versions)
-3. A [Hugging Face account](https://huggingface.co/) and valid [API key](https://huggingface.co/settings/tokens)
+3. A [Hugging Face account](https://huggingface.co/) and valid [API key](https://huggingface.co/settings/tokens) (to send requests via the Hugging Face inference API)
 > [!NOTE]
 > The Hugging Face inference API is free to use within certain limits but incurs a charge per request over those limits. You can check your usage in your [account settings](https://huggingface.co/settings/billing).
 
