@@ -5,8 +5,7 @@ from PIL import Image
 import requests
 
 API_TOKEN = config("API_TOKEN")
-
-API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+API_URL = config("API_URL")
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
@@ -14,8 +13,8 @@ def generate_image(prompt):
     payload = {
         "inputs": prompt,
         "parameters": {
-            "guidance_scale": 7.5,
-            "num_inference_steps": 10
+            "guidance_scale": 10,
+            "num_inference_steps": 30
         }
     }
     
